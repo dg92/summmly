@@ -74,10 +74,8 @@ app.ui = {
 
 $(function () {
     app.ui.particles();
-    if (Modernizr.localstorage) {
-        if(localStorage.getItem("color") == "white") {
-            $('body').addClass('white');
-        }
+    if(localStorage.getItem("color") == "white") {
+        $('body').addClass('white');
     }
 });
 
